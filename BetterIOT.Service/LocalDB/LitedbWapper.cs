@@ -88,6 +88,8 @@ namespace BetterIOT.Service.LocalDB
                 return success;
             }
         }
+
+
         public BsonDocument FindById(int docId, string TypeName)
         {
             using (var db = new LiteDatabase(DbPath))

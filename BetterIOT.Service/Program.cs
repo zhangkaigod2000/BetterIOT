@@ -14,9 +14,10 @@ namespace BetterIOT.Service
             var builder = new HostBuilder()
            .ConfigureServices((hostContext, services) =>
            {
+               ///启动UDP网络发现服务
                services.AddHostedService<Udp_Discovery>();
 
-               // ///启动MQBus服务
+               ///启动MQBus服务
                services.AddHostedService<BusService>();
 
                // ///启动Mqtt服务
@@ -25,8 +26,8 @@ namespace BetterIOT.Service
                // ///启动Udp服务
                // services.AddHostedService<UdpService>();
 
-               // ///启动数据库服务
-               // services.AddHostedService<DataService>();
+               ///启动数据库服务
+               services.AddHostedService<IOTDataService>();
            })
            .ConfigureLogging((hostContext, logging) =>
            {
