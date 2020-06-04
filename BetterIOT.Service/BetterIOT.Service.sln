@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BetterIOT.Service", "BetterIOT.Service.csproj", "{976B5CE0-F1DB-4E2A-96C3-B4B342CBE86E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetterIOT.Common", "..\BetterIOT.Common\BetterIOT.Common.csproj", "{4371D4CD-8FBD-4AE6-93F3-78E5BB67A457}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{976B5CE0-F1DB-4E2A-96C3-B4B342CBE86E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{976B5CE0-F1DB-4E2A-96C3-B4B342CBE86E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{976B5CE0-F1DB-4E2A-96C3-B4B342CBE86E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{976B5CE0-F1DB-4E2A-96C3-B4B342CBE86E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4371D4CD-8FBD-4AE6-93F3-78E5BB67A457}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4371D4CD-8FBD-4AE6-93F3-78E5BB67A457}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4371D4CD-8FBD-4AE6-93F3-78E5BB67A457}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4371D4CD-8FBD-4AE6-93F3-78E5BB67A457}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AF4ACFD8-ED46-4E36-98BF-1DD6B6A37AE8}
+	EndGlobalSection
+EndGlobal
