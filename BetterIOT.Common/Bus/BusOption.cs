@@ -23,15 +23,9 @@
         /// </summary>
         public const string CONFIG_CHANGE = "config/change";
 
-        /////////////////////////////////兼容老版本的订阅//////////////////////////////////
-
         /// <summary>
-        /// 旧系统EDZ
+        /// 设备心跳
         /// </summary>
-        public const string OLD_EDZ = "old/edz";
-        /// <summary>
-        /// 旧系统焊台
-        /// </summary>
-        public const string OLD_WELLERDATA = "old/wellerdata";
+        public const string DRIVE_HEARTBEAT = "drive/heartbeat";
     }
 }
