@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30104.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BetterIOT.Service", "BetterIOT.Service.csproj", "{976B5CE0-F1DB-4E2A-96C3-B4B342CBE86E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetterIOT.Common", "..\BetterIOT.Common\BetterIOT.Common.csproj", "{4371D4CD-8FBD-4AE6-93F3-78E5BB67A457}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BetterIOT.Common", "..\BetterIOT.Common\BetterIOT.Common.csproj", "{4371D4CD-8FBD-4AE6-93F3-78E5BB67A457}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Drive", "Drive", "{AC1A5E03-987D-41B3-85D1-5885A83648AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

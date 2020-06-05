@@ -24,6 +24,7 @@ namespace BetterIOT.Service.Core
         {
             this.logger = logger;
             litedb = new LitedbWapper(DBFile);
+            bus = new BusClient();
             this.bus.Subscribe(BusOption.DATA_OUTPUT);
             this.bus.OnReceived += Bus_OnReceived;
             //每10分钟执行一次数据清理

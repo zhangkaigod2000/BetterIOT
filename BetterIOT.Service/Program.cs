@@ -1,4 +1,5 @@
-﻿using BetterIOT.Service.Core;
+﻿using BetterIOT.Service.Config;
+using BetterIOT.Service.Core;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
@@ -15,7 +16,10 @@ namespace BetterIOT.Service
         /// 设备驱动在线情况
         /// </summary>
         public static Dictionary<string, DateTime> DriveOnlineInfo = new Dictionary<string, DateTime>();
-        static async Task  Main(string[] args)
+
+        public static ConfigInfo configInfo = ConfigInfo.ReadConfig();
+
+        static async Task Main(string[] args)
         {
             var builder = new HostBuilder()
            .ConfigureServices((hostContext, services) =>
@@ -27,8 +31,8 @@ namespace BetterIOT.Service
                services.AddHostedService<BusService>();
 
 
-               // ///启动Mqtt服务
-               // services.AddHostedService<MqttService>();
+               ///启动Mqtt服务
+               services.AddHostedService<MqttService>();
 
                ///启动驱动运行状态服务
                services.AddHostedService<DriveStatusService>();

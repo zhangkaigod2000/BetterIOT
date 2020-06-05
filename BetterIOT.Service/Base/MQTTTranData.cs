@@ -140,7 +140,7 @@ namespace BetterIOT.Service.Base
         /// <summary>
         /// 发送信息
         /// </summary>
-        public async void SendMessageTB(string Message, string SendTopic)
+        public bool SendMessageTB(string Message, string SendTopic)
         {
             try
             {
@@ -150,12 +150,13 @@ namespace BetterIOT.Service.Base
                     Payload = Encoding.UTF8.GetBytes(Message),
                     QualityOfServiceLevel = MQTTnet.Protocol.MqttQualityOfServiceLevel.ExactlyOnce
                 };
-                await mtqqClient.PublishAsync(message);
+                mtqqClient.PublishAsync(message);
                 SendTime = DateTime.Now;
+                return true;
             }
             catch (Exception ex)
             {
-                Connect();
+                return false;
             }
         }
 

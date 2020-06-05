@@ -18,6 +18,7 @@ namespace BetterIOT.Service.Core
         public DriveStatusService(ILogger<DriveStatusService> logger)
         {
             this.logger = logger;
+            bus = new BusClient();
             this.bus.Subscribe(BusOption.DRIVE_HEARTBEAT);
             this.bus.OnReceived += Bus_OnReceived;
         }

@@ -19,6 +19,7 @@ namespace BetterIOT.Common.Base
         {
             DriveConfig = config;
             DeviceConn(config);
+            bus = new BusClient();
             this.bus.Subscribe(BusOption.CMD_INPUT);
             this.bus.OnReceived += Bus_OnReceived;
             ISRun = true;
