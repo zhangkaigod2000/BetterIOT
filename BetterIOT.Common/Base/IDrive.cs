@@ -1,6 +1,7 @@
 ﻿using BetterIOT.Common.Bus;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -30,7 +31,10 @@ namespace BetterIOT.Common.Base
                 IEnumerable<IOTData> iOTs = GetData();
                 if (iOTs != null)
                 {
-                    bus.Publish(BusOption.CMD_INPUT, JsonSerializer.Serialize(iOTs));
+                    if (iOTs.Count() >0)
+                    {
+                        bus.Publish(BusOption.CMD_INPUT, JsonSerializer.Serialize(iOTs));
+                    }
                 }
                 System.Threading.Thread.Sleep(config.CycleTime);
             }
