@@ -23,9 +23,8 @@
         /// </summary>
         public const string CONFIG_CHANGE = "config/change";
 
-        /// <summary>
-        /// 设备心跳
-        /// </summary>
-        public const string DRIVE_HEARTBEAT = "drive/heartbeat";
+        //外部控制命令
+        public const string CTRL_START = "ctrl/start";   //通知管理器启动某驱动
+        public const string CTRL_STOP = "ctrl/stop";    //通知管理器停止某驱动
     }
 }

@@ -12,18 +12,19 @@ namespace BetterIOT.Common.Base
     /// </summary>
     public abstract class IDrive<T> where T : ConfigBase
     {
-        private readonly BusClient bus;
+        BusClient bus;
         private bool ISRun = false;
         T DriveConfig;
-        public void Start(T config)
+        public void Start(string ConfigFilePath)
         {
+            string strConfig = System.IO.File.ReadAllText(ConfigFilePath);
+            T config = JsonSerializer.Deserialize<T>(strConfig);
             DriveConfig = config;
             DeviceConn(config);
             bus = new BusClient();
             this.bus.Subscribe(BusOption.CMD_INPUT);
             this.bus.OnReceived += Bus_OnReceived;
             ISRun = true;
-            Task.Factory.StartNew(HeartBeart); //开启心跳
             while(ISRun)
             {
                 IEnumerable<IOTData> iOTs = GetData();
@@ -61,18 +62,6 @@ namespace BetterIOT.Common.Base
                 {
                     ISRun = false;
                 }
-            }
-        }
-
-        private void HeartBeart()
-        {
-            DriveHeartBeat heartBeat = new DriveHeartBeat();
-            heartBeat.DriveCode = DriveConfig.DriveCode;
-            while (ISRun)
-            {
-                heartBeat.hTime = DateTime.Now;
-                bus.Publish(BusOption.CMD_INPUT, JsonSerializer.Serialize(heartBeat));
-                System.Threading.Thread.Sleep(5000);
             }
         }
     }
