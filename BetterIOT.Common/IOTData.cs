@@ -8,13 +8,13 @@ namespace BetterIOT.Common
         [BsonId]
         public Guid ID { get; set; } = Guid.NewGuid();
         /// <summary>
-        /// 设备序列号
+        /// 设备编号
         /// </summary>
-        public string DevSerialNo { get; set; }
+        public string DriveCode { get; set; }
         /// <summary>
-        /// 设备型号
+        /// 驱动类型
         /// </summary>
-        public string DevModel { get; set; }
+        public string DriveType { get; set; }
         /// <summary>
         /// 数据名称
         /// </summary>
@@ -27,6 +27,10 @@ namespace BetterIOT.Common
         /// 数据值
         /// </summary>
         public string DataValue { get; set; }
+        /// <summary>
+        /// 单位
+        /// </summary>
+        public string Unit { get; set; }
         /// <summary>
         /// 获取时间
         /// </summary>

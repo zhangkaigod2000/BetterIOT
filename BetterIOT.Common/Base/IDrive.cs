@@ -14,7 +14,7 @@ namespace BetterIOT.Common.Base
     {
         BusClient bus;
         private bool ISRun = false;
-        T DriveConfig;
+        protected T DriveConfig;
         public void Start(string ConfigFilePath)
         {
             string strConfig = System.IO.File.ReadAllText(ConfigFilePath);

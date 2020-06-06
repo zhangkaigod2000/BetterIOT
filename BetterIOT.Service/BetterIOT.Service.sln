@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BetterIOT.Common", "..\Bett
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Drive", "Drive", "{AC1A5E03-987D-41B3-85D1-5885A83648AA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drive.ModbusRTU", "..\Drive\Drive.ModbusRTU\Drive.ModbusRTU.csproj", "{7006EE3D-5BA4-46D3-B4EE-D391A73DC212}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,9 +25,16 @@ Global
 		{4371D4CD-8FBD-4AE6-93F3-78E5BB67A457}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4371D4CD-8FBD-4AE6-93F3-78E5BB67A457}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4371D4CD-8FBD-4AE6-93F3-78E5BB67A457}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7006EE3D-5BA4-46D3-B4EE-D391A73DC212}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7006EE3D-5BA4-46D3-B4EE-D391A73DC212}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7006EE3D-5BA4-46D3-B4EE-D391A73DC212}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7006EE3D-5BA4-46D3-B4EE-D391A73DC212}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7006EE3D-5BA4-46D3-B4EE-D391A73DC212} = {AC1A5E03-987D-41B3-85D1-5885A83648AA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AF4ACFD8-ED46-4E36-98BF-1DD6B6A37AE8}
