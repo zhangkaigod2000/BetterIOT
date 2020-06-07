@@ -15,7 +15,7 @@ namespace BetterIOT.Common.DriveConfig
         /// <summary>
         /// 端口
         /// </summary>
-        public int Port { get; set; }
+        public int Port { get; set; } = 102;
 
         /// <summary>
         /// 西门子PLC类型

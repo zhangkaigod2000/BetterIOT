@@ -15,12 +15,10 @@ namespace Drive.Siemens.PLC.S7Net
     /// </summary>
     public class S7NetDrive : IDrive<S7NetConfig>
     {
-
         static int rack = 0;
         static int slot = 0;
         SiemensS7Net siemensTcpNet = null;
         SiemensPLCS siemensPLCSelected = SiemensPLCS.S1200;
-        OperateResult connect;
         public override void DeviceConn(S7NetConfig config)
         {
             Connect();
@@ -81,6 +79,10 @@ namespace Drive.Siemens.PLC.S7Net
                     siemensTcpNet.Slot = (byte)slot;
                 }
                 OperateResult connect = siemensTcpNet.ConnectServer();
+                if (!connect.IsSuccess)
+                {
+                    throw new Exception("Connect Failed");
+                }
             }
             catch (Exception ex)
             {
@@ -97,62 +99,67 @@ namespace Drive.Siemens.PLC.S7Net
         public override IEnumerable<IOTData> GetData()
         {
             List<IOTData> iOTs = new List<IOTData>();
-            if (connect.IsSuccess)
+            foreach (S7NetResult result in DriveConfig.Results)
             {
-                foreach (S7NetResult result in DriveConfig.Results)
+                try
                 {
-                    Byte[] bts = new Byte[result.Len];
-                    try
+                    string sResult;
+                    switch (result.DataType.ToUpper())
                     {
-                        string sResult;
-                        switch (result.DataType.ToUpper())
-                        {
-                            case "BOOL":
-                                sResult = siemensTcpNet.ReadBool(result.DB).Content.ToString();
-                                break;
-                            case "STRING":
-                                sResult = siemensTcpNet.ReadString(result.DB).Content;
-                                break;
-                            case "INT":
-                                sResult = siemensTcpNet.ReadInt32(result.DB).Content.ToString();
-                                break;
-                            case "FLOAT":
-                                sResult = siemensTcpNet.ReadFloat(result.DB).Content.ToString(result.Format);
-                                break;
-                            case "DOUBLE":
-                                sResult = siemensTcpNet.ReadDouble(result.DB).Content.ToString(result.Format);
-                                break;
-                            case "BYTE":
-                                sResult = siemensTcpNet.ReadByte(result.DB).Content.ToString();
-                                break;
-                            case "SHORT":
-                                sResult = siemensTcpNet.ReadInt16(result.DB).Content.ToString();
-                                break;
-                            case "USHORT":
-                                sResult = siemensTcpNet.ReadUInt16(result.DB).Content.ToString();
-                                break;
-                            case "UINT":
-                                sResult = siemensTcpNet.ReadUInt32(result.DB).Content.ToString();
-                                break;
-                            default:
-                                sResult = siemensTcpNet.ReadString(result.DB).Content;
-                                break;
-                        }
-                        iOTs.Add(new IOTData
-                        {
-                            DataCode = result.Address,
-                            DataValue = sResult,
-                            DataName = result.Name,
-                            DriveCode = DriveConfig.DriveCode,
-                            DriveType = DriveConfig.DriveType,
-                            GTime = DateTime.Now,
-                            Unit = result.Unit
-                        });
+                        case "BOOL":
+                            sResult = siemensTcpNet.ReadBool(result.DB).Content.ToString();
+                            break;
+                        case "STRING":
+                            sResult = siemensTcpNet.ReadString(result.DB, Convert.ToUInt16(result.Len)).Content;
+                            break;
+                        case "INT":
+                            sResult = siemensTcpNet.ReadInt32(result.DB).Content.ToString();
+                            break;
+                        case "FLOAT":
+                            sResult = siemensTcpNet.ReadFloat(result.DB).Content.ToString(result.Format);
+                            break;
+                        case "DOUBLE":
+                            sResult = siemensTcpNet.ReadDouble(result.DB).Content.ToString(result.Format);
+                            break;
+                        case "BYTE":
+                            sResult = siemensTcpNet.ReadByte(result.DB).Content.ToString();
+                            break;
+                        case "SHORT":
+                            sResult = siemensTcpNet.ReadInt16(result.DB).Content.ToString();
+                            break;
+                        case "USHORT":
+                            sResult = siemensTcpNet.ReadUInt16(result.DB).Content.ToString();
+                            break;
+                        case "UINT":
+                            sResult = siemensTcpNet.ReadUInt32(result.DB).Content.ToString();
+                            break;
+                        case "LONG":
+                            sResult = siemensTcpNet.ReadInt64(result.DB).Content.ToString();
+                            break;
+                        case "ULONG":
+                            sResult = siemensTcpNet.ReadUInt64(result.DB).Content.ToString();
+                            break;
+                        case "DATETIME":
+                            sResult = siemensTcpNet.ReadDateTime(result.DB).Content.ToString();
+                            break;
+                        default:
+                            sResult = siemensTcpNet.ReadString(result.DB).Content;
+                            break;
                     }
-                    catch (Exception ex)
+                    iOTs.Add(new IOTData
                     {
-                        Console.WriteLine(ex.ToString());
-                    }
+                        DataCode = result.Address,
+                        DataValue = sResult,
+                        DataName = result.Name,
+                        DriveCode = DriveConfig.DriveCode,
+                        DriveType = DriveConfig.DriveType,
+                        GTime = DateTime.Now,
+                        Unit = result.Unit
+                    });
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.ToString());
                 }
             }
             return iOTs;
