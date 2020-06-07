@@ -1,5 +1,5 @@
 # BetterIOT
-一个适合在arm和X86设备上运行的工业设备数据采集系统
+一个适合在arm和X86边缘计算设备上运行的工业设备数据采集系统
 
 助力AIOT事业，让C#写的采集程序借助于netCore可以运行在基于ubuntu的arm设备上及运行以及X86架构的windows和ubuntu上，可以局域网、互联网使用。
 借助于dathlin/HslCommunication这个项目来实现部分设备的访问。借助于MQTT来实现设备数据的对外通讯部分。
