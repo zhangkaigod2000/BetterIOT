@@ -8,3 +8,5 @@ modbusrtu,DLT645 2007,GBT26875.3 城市消防远程监控系统 报警传输网�
 西门子 S1200,S400,S300,S1500,S200,S200Smart,FetchWrite,MPI,PPI,PPIOverTcp
 
 协议将不断完善中。
+
+疑问和意向联系邮箱：betteriot@126.com
