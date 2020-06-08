@@ -25,15 +25,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drive.Siemens.PLC.PPI", "..
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drive.Siemens.PLC.PPIOverTcp", "..\Drive\Drive.Siemens.PLC.PPIOverTcp\Drive.Siemens.PLC.PPIOverTcp.csproj", "{09FD1300-34A2-47B0-A388-FF2B03FDDE84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drive.Mitsubishi.PLC.A1EAsciiNet", "..\Drive\Drive.Mitsubishi.PLC.A1EAsciiNet\Drive.Mitsubishi.PLC.A1EAsciiNet.csproj", "{0B8DFD26-43A2-49BF-B8D6-C1388FEDEDDE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drive.Mitsubishi.PLC.A1EAsciiNet", "..\Drive\Drive.Mitsubishi.PLC.A1EAsciiNet\Drive.Mitsubishi.PLC.A1EAsciiNet.csproj", "{0B8DFD26-43A2-49BF-B8D6-C1388FEDEDDE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetterIOT.Hsl.Template", "..\BetterIOT.Hsl.Template\BetterIOT.Hsl.Template.csproj", "{FC9F2112-B42C-445D-BA5A-2F14234A7BBB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BetterIOT.Hsl.Template", "..\BetterIOT.Hsl.Template\BetterIOT.Hsl.Template.csproj", "{FC9F2112-B42C-445D-BA5A-2F14234A7BBB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drive.Mitsubishi.PLC.A1ENetBinary", "..\Drive\Drive.Mitsubishi.PLC.A1ENetBinary\Drive.Mitsubishi.PLC.A1ENetBinary.csproj", "{9A94DF1D-DC06-4802-A166-79C52AEABF38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drive.Mitsubishi.PLC.A1ENetBinary", "..\Drive\Drive.Mitsubishi.PLC.A1ENetBinary\Drive.Mitsubishi.PLC.A1ENetBinary.csproj", "{9A94DF1D-DC06-4802-A166-79C52AEABF38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drive.Mitsubishi.PLC.Melsec3C", "..\Drive\Drive.Mitsubishi.PLC.Melsec3C\Drive.Mitsubishi.PLC.Melsec3C.csproj", "{088C3254-31EF-4893-87CF-BA0CF2B9C16E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drive.Mitsubishi.PLC.Melsec3C", "..\Drive\Drive.Mitsubishi.PLC.Melsec3C\Drive.Mitsubishi.PLC.Melsec3C.csproj", "{088C3254-31EF-4893-87CF-BA0CF2B9C16E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drive.Mitsubishi.PLC.Melsec3COverTcp", "..\Drive\Drive.Mitsubishi.PLC.Melsec3COverTcp\Drive.Mitsubishi.PLC.Melsec3COverTcp.csproj", "{4AC8D61C-9152-4ABE-800B-51BD9BD7B5AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drive.Mitsubishi.PLC.Melsec3COverTcp", "..\Drive\Drive.Mitsubishi.PLC.Melsec3COverTcp\Drive.Mitsubishi.PLC.Melsec3COverTcp.csproj", "{4AC8D61C-9152-4ABE-800B-51BD9BD7B5AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drive.Mitsubishi.PLC.MelsecMcAsciiNe", "..\Drive\Drive.Mitsubishi.PLC.MelsecMcAsciiNet\Drive.Mitsubishi.PLC.MelsecMcAsciiNe.csproj", "{8A640829-BF6E-475B-8CA2-826C6E5DEE1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drive.Mitsubishi.PLC.MelsecMcAscii_Udp", "..\Drive\Drive.Mitsubishi.PLC.MelsecMcAscii_Udp\Drive.Mitsubishi.PLC.MelsecMcAscii_Udp.csproj", "{F3172FF0-7280-48D3-A669-49F6A856138D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drive.Mitsubishi.PLC.Melsec_Binary", "..\Drive\Drive.Mitsubishi.PLC.Melsec_Binary\Drive.Mitsubishi.PLC.Melsec_Binary.csproj", "{C761BD07-1D6F-464F-BE2D-2BC2995A2CE2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -101,6 +107,18 @@ Global
 		{4AC8D61C-9152-4ABE-800B-51BD9BD7B5AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4AC8D61C-9152-4ABE-800B-51BD9BD7B5AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4AC8D61C-9152-4ABE-800B-51BD9BD7B5AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A640829-BF6E-475B-8CA2-826C6E5DEE1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A640829-BF6E-475B-8CA2-826C6E5DEE1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A640829-BF6E-475B-8CA2-826C6E5DEE1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A640829-BF6E-475B-8CA2-826C6E5DEE1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3172FF0-7280-48D3-A669-49F6A856138D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3172FF0-7280-48D3-A669-49F6A856138D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3172FF0-7280-48D3-A669-49F6A856138D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3172FF0-7280-48D3-A669-49F6A856138D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C761BD07-1D6F-464F-BE2D-2BC2995A2CE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C761BD07-1D6F-464F-BE2D-2BC2995A2CE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C761BD07-1D6F-464F-BE2D-2BC2995A2CE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C761BD07-1D6F-464F-BE2D-2BC2995A2CE2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -118,6 +136,9 @@ Global
 		{9A94DF1D-DC06-4802-A166-79C52AEABF38} = {AC1A5E03-987D-41B3-85D1-5885A83648AA}
 		{088C3254-31EF-4893-87CF-BA0CF2B9C16E} = {AC1A5E03-987D-41B3-85D1-5885A83648AA}
 		{4AC8D61C-9152-4ABE-800B-51BD9BD7B5AD} = {AC1A5E03-987D-41B3-85D1-5885A83648AA}
+		{8A640829-BF6E-475B-8CA2-826C6E5DEE1F} = {AC1A5E03-987D-41B3-85D1-5885A83648AA}
+		{F3172FF0-7280-48D3-A669-49F6A856138D} = {AC1A5E03-987D-41B3-85D1-5885A83648AA}
+		{C761BD07-1D6F-464F-BE2D-2BC2995A2CE2} = {AC1A5E03-987D-41B3-85D1-5885A83648AA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AF4ACFD8-ED46-4E36-98BF-1DD6B6A37AE8}
