@@ -33,7 +33,7 @@ namespace BetterIOT.Hsl.Template
                 {
                     if (iOTs.Count() > 0)
                     {
-                        bus.Publish(BusOption.CMD_INPUT, JsonSerializer.Serialize(iOTs));
+                        bus.Publish(BusOption.DATA_OUTPUT, JsonSerializer.Serialize(iOTs));
                     }
                 }
                 System.Threading.Thread.Sleep(config.CycleTime);

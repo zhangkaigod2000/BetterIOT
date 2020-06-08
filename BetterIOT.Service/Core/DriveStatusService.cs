@@ -6,6 +6,7 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -52,11 +53,18 @@ namespace BetterIOT.Service.Core
         private void StartAllDrive()
         {
             string DriveConfigPath = AppDomain.CurrentDomain.BaseDirectory + "/DriveConfig/";
+            if (System.IO.Directory.Exists(DriveConfigPath) == false)
+            {
+                System.IO.Directory.CreateDirectory(DriveConfigPath);
+            }
             string[] AllDriveConfig = System.IO.Directory.GetFiles(DriveConfigPath);      //全部的驱动配置文件
             foreach(string strConfig in AllDriveConfig)
             {
-                string strTmp = System.IO.Path.GetFileNameWithoutExtension(strConfig);
-                StartDrive(strTmp);
+                if (Path.GetExtension(strConfig).ToLower() == ".json")
+                {
+                    string strTmp = System.IO.Path.GetFileNameWithoutExtension(strConfig);
+                    StartDrive(strTmp);
+                }
             }
         }
 

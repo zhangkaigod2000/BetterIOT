@@ -35,9 +35,12 @@ namespace BetterIOT.Service.Core
         {
             using (var db = new LiteDatabase(DBFile))
             {
-                var col = db.GetCollection<IOTData>(typeof(IOTData).ToString());
-                col.EnsureIndex(x => x.Sended);
-                col.DeleteMany(a=>a.Sended == true);
+                var col = db.GetCollection<IOTData>();
+                if (col.Count() > 0)
+                {
+                    col.EnsureIndex(x => x.Sended);
+                    col.DeleteMany(a => a.Sended == true);
+                }
             }
         }
 
