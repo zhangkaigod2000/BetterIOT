@@ -8,6 +8,7 @@
 * 西门子 S1200,S400,S300,S1500,S200,S200Smart,FetchWrite,MPI,PPI,PPIOverTcp
 * 三菱PLC协议目前已经集成完毕（HSL中的）
 * 欧姆龙PLC协议目前已经集成完毕（HSL中的）
+* LSIS PLC协议目前已经集成完毕（HSL中的）
 
 协议将不断完善中。
 
