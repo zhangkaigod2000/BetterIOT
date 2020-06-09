@@ -28,7 +28,7 @@ namespace BetterIOT.Common.DriveConfig
         /// </summary>
         public string StopBits { get; set; }
         /// <summary>
-        /// 西门子PLC站号
+        /// PLC站号
         /// </summary>
         public byte StationNo { get; set; }
     }
