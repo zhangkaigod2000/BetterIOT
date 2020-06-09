@@ -47,6 +47,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drive.Mitsubishi.PLC.Melsec
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drive.Mitsubishi.PLC.MelsecFx_LinksOverTcp", "..\Drive\Drive.Mitsubishi.PLC.MelsecFx_LinksOverTcp\Drive.Mitsubishi.PLC.MelsecFx_LinksOverTcp.csproj", "{41009216-9E4D-41D1-AB24-7A8AAF347AEE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drive.Mitsubishi.PLC.MelsecR_Binary", "..\Drive\Drive.Mitsubishi.PLC.MelsecR_Binary\Drive.Mitsubishi.PLC.MelsecR_Binary.csproj", "{739EE9DE-312C-4E3E-9A6E-295EA67A65CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drive.Mitsubishi.PLC.Melsec_Serial", "..\Drive\Drive.Mitsubishi.PLC.Melsec_Serial\Drive.Mitsubishi.PLC.Melsec_Serial.csproj", "{CADD4214-0838-4AD4-8C38-D82D0F25A761}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drive.Mitsubishi.PLC.MelsecFx_SerialOverTcp", "..\Drive\Drive.Mitsubishi.PLC.MelsecFx_SerialOverTcp\Drive.Mitsubishi.PLC.MelsecFx_SerialOverTcp.csproj", "{A8501BE2-E749-448C-86FA-9CB98B0BB63F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drive.Mitsubishi.PLC.MelsecMc_Udp", "..\Drive\Drive.Mitsubishi.PLC.MelsecMc_Udp\Drive.Mitsubishi.PLC.MelsecMc_Udp.csproj", "{C68B0C58-48F4-4B44-AA17-829A7B098194}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -137,6 +145,22 @@ Global
 		{41009216-9E4D-41D1-AB24-7A8AAF347AEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41009216-9E4D-41D1-AB24-7A8AAF347AEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41009216-9E4D-41D1-AB24-7A8AAF347AEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{739EE9DE-312C-4E3E-9A6E-295EA67A65CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{739EE9DE-312C-4E3E-9A6E-295EA67A65CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{739EE9DE-312C-4E3E-9A6E-295EA67A65CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{739EE9DE-312C-4E3E-9A6E-295EA67A65CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CADD4214-0838-4AD4-8C38-D82D0F25A761}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CADD4214-0838-4AD4-8C38-D82D0F25A761}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CADD4214-0838-4AD4-8C38-D82D0F25A761}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CADD4214-0838-4AD4-8C38-D82D0F25A761}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8501BE2-E749-448C-86FA-9CB98B0BB63F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8501BE2-E749-448C-86FA-9CB98B0BB63F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8501BE2-E749-448C-86FA-9CB98B0BB63F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8501BE2-E749-448C-86FA-9CB98B0BB63F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C68B0C58-48F4-4B44-AA17-829A7B098194}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C68B0C58-48F4-4B44-AA17-829A7B098194}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C68B0C58-48F4-4B44-AA17-829A7B098194}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C68B0C58-48F4-4B44-AA17-829A7B098194}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -160,6 +184,10 @@ Global
 		{BF71F457-87A2-436A-90C4-683A86615C3B} = {AC1A5E03-987D-41B3-85D1-5885A83648AA}
 		{B663F566-44F5-464E-91F6-A1C504BBB0CD} = {AC1A5E03-987D-41B3-85D1-5885A83648AA}
 		{41009216-9E4D-41D1-AB24-7A8AAF347AEE} = {AC1A5E03-987D-41B3-85D1-5885A83648AA}
+		{739EE9DE-312C-4E3E-9A6E-295EA67A65CA} = {AC1A5E03-987D-41B3-85D1-5885A83648AA}
+		{CADD4214-0838-4AD4-8C38-D82D0F25A761} = {AC1A5E03-987D-41B3-85D1-5885A83648AA}
+		{A8501BE2-E749-448C-86FA-9CB98B0BB63F} = {AC1A5E03-987D-41B3-85D1-5885A83648AA}
+		{C68B0C58-48F4-4B44-AA17-829A7B098194} = {AC1A5E03-987D-41B3-85D1-5885A83648AA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AF4ACFD8-ED46-4E36-98BF-1DD6B6A37AE8}
