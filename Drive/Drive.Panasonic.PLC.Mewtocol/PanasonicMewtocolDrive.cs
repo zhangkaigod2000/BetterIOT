@@ -1,24 +1,23 @@
 ﻿using BetterIOT.Common.DriveConfig;
 using BetterIOT.Hsl.Template;
-using HslCommunication.Profinet.LSIS;
+using HslCommunication.Profinet.Panasonic;
 using System;
 using System.Collections.Generic;
 using System.IO.Ports;
 using System.Text;
 
-namespace Drive.LSIS.PLC.XGBC_net
+namespace Drive.Panasonic.PLC.Mewtocol
 {
-    public class XGBCnetDrive : NetworkDeviceBaseTemplate<XGBCnetConfig>
+    public class PanasonicMewtocolDrive : NetworkDeviceBaseTemplate<PanasonicMewtocolConfig>
     {
         SerialPort serialPort = new SerialPort();
-        public override void DeviceConn(XGBCnetConfig config)
+        public override void DeviceConn(PanasonicMewtocolConfig config)
         {
-            XGBCnet gBCnet = new XGBCnet();
+            PanasonicMewtocol mewtocol = new PanasonicMewtocol(config.StationNo);
             SetPort();
-            gBCnet.Station = config.StationNo;
-            gBCnet.SerialPortInni(serialPort.PortName, serialPort.BaudRate, serialPort.DataBits, serialPort.StopBits, serialPort.Parity);
-            gBCnet.Open();
-            NetworkDevice = gBCnet;
+            mewtocol.SerialPortInni(serialPort.PortName, serialPort.BaudRate, serialPort.DataBits, serialPort.StopBits, serialPort.Parity);
+            mewtocol.Open();
+            NetworkDevice = mewtocol;
         }
         private void SetPort()
         {
@@ -61,7 +60,7 @@ namespace Drive.LSIS.PLC.XGBC_net
 
         public override void DeviceDiscnn()
         {
-            ((XGBCnet)NetworkDevice).Close();
+            ((PanasonicMewtocol)NetworkDevice).Close();
         }
     }
 }
