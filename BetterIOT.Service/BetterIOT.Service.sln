@@ -89,6 +89,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drive.FATEK.PLC.ProgramPort
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drive.FATEK.PLC.ProgrameOverTcp", "..\Drive\Drive.FATEK.PLC.ProgrameOverTcp\Drive.FATEK.PLC.ProgrameOverTcp.csproj", "{0F6DC714-4C6F-450B-8356-50F442A01E1A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drive.AllenBradley.PLC.LogixTcp", "..\Drive\Drive.AllenBradley.PLC.LogixTcp\Drive.AllenBradley.PLC.LogixTcp.csproj", "{607A14CE-24CB-4A5F-815D-BD5E947741CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drive.AllenBradley.PLC.MicroCip", "..\Drive\Drive.AllenBradley.PLC.MicroCip\Drive.AllenBradley.PLC.MicroCip.csproj", "{01AE5D24-8F05-4559-9D70-E40967E8F34B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -263,6 +267,14 @@ Global
 		{0F6DC714-4C6F-450B-8356-50F442A01E1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F6DC714-4C6F-450B-8356-50F442A01E1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F6DC714-4C6F-450B-8356-50F442A01E1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{607A14CE-24CB-4A5F-815D-BD5E947741CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{607A14CE-24CB-4A5F-815D-BD5E947741CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{607A14CE-24CB-4A5F-815D-BD5E947741CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{607A14CE-24CB-4A5F-815D-BD5E947741CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01AE5D24-8F05-4559-9D70-E40967E8F34B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01AE5D24-8F05-4559-9D70-E40967E8F34B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01AE5D24-8F05-4559-9D70-E40967E8F34B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01AE5D24-8F05-4559-9D70-E40967E8F34B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -307,6 +319,8 @@ Global
 		{3F33353C-57E8-4A4D-8868-BDCA9D946CF7} = {AC1A5E03-987D-41B3-85D1-5885A83648AA}
 		{44DCEE9C-0F54-44B3-89F8-E37B9F619A8C} = {AC1A5E03-987D-41B3-85D1-5885A83648AA}
 		{0F6DC714-4C6F-450B-8356-50F442A01E1A} = {AC1A5E03-987D-41B3-85D1-5885A83648AA}
+		{607A14CE-24CB-4A5F-815D-BD5E947741CD} = {AC1A5E03-987D-41B3-85D1-5885A83648AA}
+		{01AE5D24-8F05-4559-9D70-E40967E8F34B} = {AC1A5E03-987D-41B3-85D1-5885A83648AA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AF4ACFD8-ED46-4E36-98BF-1DD6B6A37AE8}
