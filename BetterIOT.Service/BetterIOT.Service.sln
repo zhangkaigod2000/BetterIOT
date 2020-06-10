@@ -65,17 +65,25 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drive.Omron.PLC.FinsHostLin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drive.Omron.PLC.CipNet", "..\Drive\Drive.Omron.PLC.CipNet\Drive.Omron.PLC.CipNet.csproj", "{D4075245-DA2D-46B8-84FC-93F675BAA400}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drive.LSIS.PLC.XGB_FastEnet", "..\Drive\Drive.LSIS.PLC.XGBFastEnet\Drive.LSIS.PLC.XGB_FastEnet.csproj", "{3CB43C56-4383-4237-B5C0-4090FB8E755C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drive.LSIS.PLC.XGB_FastEnet", "..\Drive\Drive.LSIS.PLC.XGBFastEnet\Drive.LSIS.PLC.XGB_FastEnet.csproj", "{3CB43C56-4383-4237-B5C0-4090FB8E755C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drive.LSIS.PLC.XGBC_net", "..\Drive\Drive.LSIS.PLC.XGBC_net\Drive.LSIS.PLC.XGBC_net.csproj", "{0E596FFD-4B99-4D36-8363-B599E8D75373}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drive.LSIS.PLC.XGBC_net", "..\Drive\Drive.LSIS.PLC.XGBC_net\Drive.LSIS.PLC.XGBC_net.csproj", "{0E596FFD-4B99-4D36-8363-B599E8D75373}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drive.LSIS.PLC.XGBC_netOverTcp", "..\Drive\Drive.LSIS.PLC.XGBC_netOverTcp\Drive.LSIS.PLC.XGBC_netOverTcp.csproj", "{A2433E9E-6C40-4458-BE49-3BC9EA6461C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drive.LSIS.PLC.XGBC_netOverTcp", "..\Drive\Drive.LSIS.PLC.XGBC_netOverTcp\Drive.LSIS.PLC.XGBC_netOverTcp.csproj", "{A2433E9E-6C40-4458-BE49-3BC9EA6461C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drive.Panasonic.PLC.Mewtocol", "..\Drive\Drive.Panasonic.PLC.Mewtocol\Drive.Panasonic.PLC.Mewtocol.csproj", "{7E7B99FE-1EE9-4586-AEEB-D9F9B777D28F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drive.Panasonic.PLC.Mewtocol", "..\Drive\Drive.Panasonic.PLC.Mewtocol\Drive.Panasonic.PLC.Mewtocol.csproj", "{7E7B99FE-1EE9-4586-AEEB-D9F9B777D28F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drive.Panasonic.PLC.MewtocolOverTcp", "..\Drive\Drive.Panasonic.PLC.MewtocolOverTcp\Drive.Panasonic.PLC.MewtocolOverTcp.csproj", "{3C75C1EE-F875-417F-8379-FA733D3FC650}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drive.Panasonic.PLC.MewtocolOverTcp", "..\Drive\Drive.Panasonic.PLC.MewtocolOverTcp\Drive.Panasonic.PLC.MewtocolOverTcp.csproj", "{3C75C1EE-F875-417F-8379-FA733D3FC650}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drive.Panasonic.PLC.MC_3E _Binary", "..\Drive\Drive.Panasonic.PLC.MC_3E _Binary\Drive.Panasonic.PLC.MC_3E _Binary.csproj", "{FAEC1507-DAD4-4E59-A30F-3AFDC1C809F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drive.Panasonic.PLC.MC_3E _Binary", "..\Drive\Drive.Panasonic.PLC.MC_3E _Binary\Drive.Panasonic.PLC.MC_3E _Binary.csproj", "{FAEC1507-DAD4-4E59-A30F-3AFDC1C809F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drive.Keyence.PLC.MC_3E_Binary", "..\Drive\Drive.Keyence.PLC.MC_3E_Binary\Drive.Keyence.PLC.MC_3E_Binary.csproj", "{2230B848-819F-460B-8F47-36520AEE8D3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drive.Keyence.PLC.MC_3E_ASCII", "..\Drive\Drive.Keyence.PLC.MC_3E_ASCII\Drive.Keyence.PLC.MC_3E_ASCII.csproj", "{D60ED6E9-DD4D-4426-B40B-64D1B8803E49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drive.Keyence.PLC.Nano_ASCII", "..\Drive\Drive.Keyence.PLC.Nano_ASCII\Drive.Keyence.PLC.Nano_ASCII.csproj", "{3712F466-96C7-4220-839E-BADE5218ECC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drive.Keyence.PLC.Nano_SerialOverTcp", "..\Drive\Drive.Keyence.PLC.Nano_SerialOverTcp\Drive.Keyence.PLC.Nano_SerialOverTcp.csproj", "{3F33353C-57E8-4A4D-8868-BDCA9D946CF7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -227,6 +235,22 @@ Global
 		{FAEC1507-DAD4-4E59-A30F-3AFDC1C809F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAEC1507-DAD4-4E59-A30F-3AFDC1C809F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAEC1507-DAD4-4E59-A30F-3AFDC1C809F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2230B848-819F-460B-8F47-36520AEE8D3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2230B848-819F-460B-8F47-36520AEE8D3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2230B848-819F-460B-8F47-36520AEE8D3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2230B848-819F-460B-8F47-36520AEE8D3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D60ED6E9-DD4D-4426-B40B-64D1B8803E49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D60ED6E9-DD4D-4426-B40B-64D1B8803E49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D60ED6E9-DD4D-4426-B40B-64D1B8803E49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D60ED6E9-DD4D-4426-B40B-64D1B8803E49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3712F466-96C7-4220-839E-BADE5218ECC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3712F466-96C7-4220-839E-BADE5218ECC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3712F466-96C7-4220-839E-BADE5218ECC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3712F466-96C7-4220-839E-BADE5218ECC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F33353C-57E8-4A4D-8868-BDCA9D946CF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F33353C-57E8-4A4D-8868-BDCA9D946CF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F33353C-57E8-4A4D-8868-BDCA9D946CF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F33353C-57E8-4A4D-8868-BDCA9D946CF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -265,6 +289,10 @@ Global
 		{7E7B99FE-1EE9-4586-AEEB-D9F9B777D28F} = {AC1A5E03-987D-41B3-85D1-5885A83648AA}
 		{3C75C1EE-F875-417F-8379-FA733D3FC650} = {AC1A5E03-987D-41B3-85D1-5885A83648AA}
 		{FAEC1507-DAD4-4E59-A30F-3AFDC1C809F9} = {AC1A5E03-987D-41B3-85D1-5885A83648AA}
+		{2230B848-819F-460B-8F47-36520AEE8D3C} = {AC1A5E03-987D-41B3-85D1-5885A83648AA}
+		{D60ED6E9-DD4D-4426-B40B-64D1B8803E49} = {AC1A5E03-987D-41B3-85D1-5885A83648AA}
+		{3712F466-96C7-4220-839E-BADE5218ECC9} = {AC1A5E03-987D-41B3-85D1-5885A83648AA}
+		{3F33353C-57E8-4A4D-8868-BDCA9D946CF7} = {AC1A5E03-987D-41B3-85D1-5885A83648AA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AF4ACFD8-ED46-4E36-98BF-1DD6B6A37AE8}
