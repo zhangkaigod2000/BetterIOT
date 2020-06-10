@@ -39,6 +39,10 @@ namespace BetterIOT.Common.Base
         /// 驱动启动文件
         /// </summary>
         public string DriveStartFile { get; set; }
+        /// <summary>
+        /// 配置文件类名
+        /// </summary>
+        public string ConfigClassName { get; set; }
 
         public static IEnumerable<DriveListConfig> ReadConfig()
         {

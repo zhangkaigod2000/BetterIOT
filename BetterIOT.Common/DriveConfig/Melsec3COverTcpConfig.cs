@@ -16,5 +16,9 @@ namespace BetterIOT.Common.DriveConfig
         /// 端口
         /// </summary>
         public int Port { get; set; }
+        /// <summary>
+        /// PLC站号
+        /// </summary>
+        public byte StationNo { get; set; }
     }
 }

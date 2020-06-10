@@ -1,0 +1,292 @@
+﻿[
+  {
+    "DriveBrand": "AllenBradley",
+    "DriveName": "AllenBradley PLC Logix Tcp",
+    "DriveType": "AllenBradley_PLC_Logix_Tcp",
+    "Remark": "AllenBradley品牌PLC的Logix Tcp接口",
+    "Version": "1.0.1",
+    "DrivePath": "AllenBradley.PLC.LogixTcp",
+    "DriveStartFile": "Drive.AllenBradley.PLC.LogixTcp.dll",
+    "ConfigClassName": "AllenBradleyNetConfig"
+  },
+  {
+    "DriveBrand": "AllenBradley",
+    "DriveName": "AllenBradley PLC MicroCip",
+    "DriveType": "AllenBradley_PLC_MicroCip",
+    "Remark": "AllenBradley品牌PLC的MicroCip接口",
+    "Version": "1.0.1",
+    "DrivePath": "AllenBradley.PLC.MicroCip",
+    "DriveStartFile": "Drive.AllenBradley.PLC.MicroCip.dll",
+    "ConfigClassName": "AllenBradleyMicroCipConfig"
+  },
+  {
+    "DriveBrand": "Other",
+    "DriveName": "DLT645 2007",
+    "DriveType": "DLT645_2007",
+    "Remark": "DLT645的2007版采集协议",
+    "Version": "1.0.1",
+    "DrivePath": "DLT645",
+    "DriveStartFile": "Drive.DLT645.dll",
+    "ConfigClassName": "DLT645Config"
+  },
+  {
+    "DriveBrand": "FATEK(永宏)",
+    "DriveName": "FATEK(永宏)编程口转TCP",
+    "DriveType": "FATEK_PLC_ProgrameOverTcp",
+    "Remark": "FATEK(永宏)编程口转TCP",
+    "Version": "1.0.1",
+    "DrivePath": "FATEK.PLC.ProgrameOverTcp",
+    "DriveStartFile": "Drive.FATEK.PLC.ProgrameOverTcp.dll",
+    "ConfigClassName": "FatekProgramOverTcpConfig"
+  },
+  {
+    "DriveBrand": "FATEK(永宏)",
+    "DriveName": "FATEK(永宏)编程口",
+    "DriveType": "FATEK_PLC_ProgramPort",
+    "Remark": "AllenBradley品牌PLC的MicroCip接口",
+    "Version": "1.0.1",
+    "DrivePath": "FATEK.PLC.ProgramPort",
+    "DriveStartFile": "Drive.FATEK.PLC.ProgramPort.dll",
+    "ConfigClassName": "FatekProgramConfig"
+  },
+  {
+    "DriveBrand": "Fuji(富士)",
+    "DriveName": "Fuji(富士)SPB接口",
+    "DriveType": "Fuji_PLC_SPB",
+    "Remark": "Fuji(富士)SPB接口",
+    "Version": "1.0.1",
+    "DrivePath": "Fuji.PLC.SPB",
+    "DriveStartFile": "Drive.Fuji.PLC.SPB.dll",
+    "ConfigClassName": "FujiSPBConfig"
+  },
+  {
+    "DriveBrand": "Fuji(富士)",
+    "DriveName": "Fuji(富士)SPB转TCP",
+    "DriveType": "Fuji_PLC_SPBOverTcp",
+    "Remark": "Fuji(富士)SPB转TCP",
+    "Version": "1.0.1",
+    "DrivePath": "Fuji.PLC.SPBOverTcp",
+    "DriveStartFile": "Drive.Fuji.PLC.SPBOverTcp.dll",
+    "ConfigClassName": "FujiSPBOverTcpConfig"
+  },
+  {
+    "DriveBrand": "Other",
+    "DriveName": "消防远程监控系统报警传输网络通信协议",
+    "DriveType": "GBxfxy",
+    "Remark": "GBT26875.3 城市消防远程监控系统 报警传输网络通信协议",
+    "Version": "1.0.1",
+    "DrivePath": "GBxfxy",
+    "DriveStartFile": "Drive.GBxfxy.dll",
+    "ConfigClassName": "GBxfxyConfig"
+  },
+  {
+    "DriveBrand": "Keyence(基恩士)",
+    "DriveName": "基恩士 MC-3E (ASCII)",
+    "DriveType": "Keyence_PLC_MC_3E_ASCII",
+    "Remark": "基恩士 MC-3E (ASCII)",
+    "Version": "1.0.1",
+    "DrivePath": "Keyence.PLC.MC_3E_ASCII",
+    "DriveStartFile": "Drive.Keyence.PLC.MC_3E_ASCII.dll",
+    "ConfigClassName": "KeyenceMcAsciiNetConfig"
+  },
+  {
+    "DriveBrand": "Keyence(基恩士)",
+    "DriveName": "基恩士 MC-3E (Binary)",
+    "DriveType": "Keyence_PLC_MC_3E_Binary",
+    "Remark": "基恩士 MC-3E (Binary)",
+    "Version": "1.0.1",
+    "DrivePath": "Keyence.PLC.MC_3E_Binary",
+    "DriveStartFile": "Drive.Keyence.PLC.MC_3E_Binary.dll",
+    "ConfigClassName": "KeyenceMcNetConfig"
+  },
+  {
+    "DriveBrand": "Keyence(基恩士)",
+    "DriveName": "基恩士 Nano(ASCII)",
+    "DriveType": "Keyence_PLC_Nano_ASCII",
+    "Remark": "基恩士 Nano(ASCII)",
+    "Version": "1.0.1",
+    "DrivePath": "Keyence.PLC.Nano_ASCII",
+    "DriveStartFile": "Drive.Keyence.PLC.Nano_ASCII.dll",
+    "ConfigClassName": "KeyenceNanoSerialConfig"
+  },
+  {
+    "DriveBrand": "Keyence(基恩士)",
+    "DriveName": "基恩士 Nano(ASCII)",
+    "DriveType": "Keyence_PLC_Nano_SerialOverTcp",
+    "Remark": "基恩士 Nano(ASCII)",
+    "Version": "1.0.1",
+    "DrivePath": "Keyence.PLC.Nano_SerialOverTcp",
+    "DriveStartFile": "Drive.Keyence.PLC.Nano_SerialOverTcp.dll",
+    "ConfigClassName": "KeyenceNanoSerialOverTcpConfig"
+  },
+  {
+    "DriveBrand": "LSIS",
+    "DriveName": "LSIS XGB Fast Enet",
+    "DriveType": "LSIS_PLC_XGB_FastEnet",
+    "Remark": "LSIS XGB Fast Enet",
+    "Version": "1.0.1",
+    "DrivePath": "LSIS.PLC.XGB_FastEnet",
+    "DriveStartFile": "Drive.LSIS.PLC.XGB_FastEnet.dll",
+    "ConfigClassName": "XGBFastEnetConfig"
+  },
+  {
+    "DriveBrand": "LSIS",
+    "DriveName": "LSIS XGB Cnet",
+    "DriveType": "LSIS_PLC_XGBC_net",
+    "Remark": "LSIS XGB Cnet",
+    "Version": "1.0.1",
+    "DrivePath": "LSIS.PLC.XGBC_net",
+    "DriveStartFile": "Drive.LSIS.PLC.XGBC_net.dll",
+    "ConfigClassName": "XGBCnetConfig"
+  },
+  {
+    "DriveBrand": "LSIS",
+    "DriveName": "LSIS XGB CnetOverTcp",
+    "DriveType": "LSIS_PLC_XGBC_netOverTcp",
+    "Remark": "LSIS XGB CnetOverTcp",
+    "Version": "1.0.1",
+    "DrivePath": "LSIS.PLC.XGBC_netOverTcp",
+    "DriveStartFile": "Drive.LSIS.PLC.XGBC_netOverTcp.dll",
+    "ConfigClassName": "XGBCnetOverTcpConfig"
+  },
+  {
+    "DriveBrand": "Mitsubishi(三菱)",
+    "DriveName": "Mitsubishi(三菱) PLC A1EAsciiNet",
+    "DriveType": "Mitsubishi_PLC_A1EAsciiNet",
+    "Remark": "Mitsubishi(三菱) PLC A1EAsciiNet",
+    "Version": "1.0.1",
+    "DrivePath": "Mitsubishi.PLC.A1EAsciiNet",
+    "DriveStartFile": "Drive.Mitsubishi.PLC.A1EAsciiNet.dll",
+    "ConfigClassName": "MelsecA1EAsciiNetConfig"
+  },
+  {
+    "DriveBrand": "Mitsubishi(三菱)",
+    "DriveName": "Mitsubishi(三菱) PLC A1ENetBinary",
+    "DriveType": "Mitsubishi_PLC_A1ENetBinary",
+    "Remark": "Mitsubishi(三菱) PLC A1ENetBinary",
+    "Version": "1.0.1",
+    "DrivePath": "Mitsubishi.PLC.A1ENetBinary",
+    "DriveStartFile": "Drive.Mitsubishi.PLC.A1ENetBinary.dll",
+    "ConfigClassName": "MelsecA1ENetConfig"
+  },
+  {
+    "DriveBrand": "Mitsubishi(三菱)",
+    "DriveName": "Mitsubishi(三菱) PLC Melsec_Binary",
+    "DriveType": "Mitsubishi_PLC_Melsec_Binary",
+    "Remark": "Mitsubishi(三菱) PLC Melsec_Binary",
+    "Version": "1.0.1",
+    "DrivePath": "Mitsubishi.PLC.Melsec_Binary",
+    "DriveStartFile": "Drive.Mitsubishi.PLC.Melsec_Binary.dll",
+    "ConfigClassName": "MelsecBinaryConfig"
+  },
+  {
+    "DriveBrand": "Mitsubishi(三菱)",
+    "DriveName": "Mitsubishi(三菱) PLC Melsec 串口",
+    "DriveType": "Mitsubishi_PLC_Melsec_Serial",
+    "Remark": "Mitsubishi(三菱) PLC Melsec 串口",
+    "Version": "1.0.1",
+    "DrivePath": "Mitsubishi.PLC.Melsec_Serial",
+    "DriveStartFile": "Drive.Mitsubishi.PLC.Melsec_Serial.dll",
+    "ConfigClassName": "MelsecSerialConfig"
+  },
+  {
+    "DriveBrand": "Mitsubishi(三菱)",
+    "DriveName": "Mitsubishi(三菱) PLC Melsec3C",
+    "DriveType": "Mitsubishi_PLC_Melsec3C",
+    "Remark": "Mitsubishi(三菱) PLC Melsec3C",
+    "Version": "1.0.1",
+    "DrivePath": "Mitsubishi.PLC.Melsec3C",
+    "DriveStartFile": "Drive.Mitsubishi.PLC.Melsec3C.dll",
+    "ConfigClassName": "Melsec3CConfig"
+  },
+  {
+    "DriveBrand": "Mitsubishi(三菱)",
+    "DriveName": "Mitsubishi(三菱) PLC Melsec3COverTcp",
+    "DriveType": "Mitsubishi_PLC_Melsec3COverTcp",
+    "Remark": "Mitsubishi(三菱) PLC Melsec3COverTcp",
+    "Version": "1.0.1",
+    "DrivePath": "Mitsubishi.PLC.Melsec3COverTcp",
+    "DriveStartFile": "Drive.Mitsubishi.PLC.Melsec3COverTcp.dll",
+    "ConfigClassName": "Melsec3COverTcpConfig"
+  },
+  {
+    "DriveBrand": "Mitsubishi(三菱)",
+    "DriveName": "Mitsubishi(三菱) PLC MelsecFx Links",
+    "DriveType": "Mitsubishi_PLC_MelsecFx_Links",
+    "Remark": "Mitsubishi(三菱) PLC MelsecFx Links",
+    "Version": "1.0.1",
+    "DrivePath": "Mitsubishi.PLC.MelsecFx_Links",
+    "DriveStartFile": "Drive.Mitsubishi.PLC.MelsecFx_Links.dll",
+    "ConfigClassName": "MelsecLinksConfig"
+  },
+  {
+    "DriveBrand": "Mitsubishi(三菱)",
+    "DriveName": "Mitsubishi(三菱) PLC MelsecFx_LinksOverTcp",
+    "DriveType": "Mitsubishi_PLC_MelsecFx_LinksOverTcp",
+    "Remark": "Mitsubishi(三菱) PLC MelsecFx_LinksOverTcp",
+    "Version": "1.0.1",
+    "DrivePath": "Mitsubishi.PLC.MelsecFx_LinksOverTcp",
+    "DriveStartFile": "Drive.Mitsubishi.PLC.MelsecFx_LinksOverTcp.dll",
+    "ConfigClassName": "MelsecLinksOverTcpConfig"
+  },
+  {
+    "DriveBrand": "Mitsubishi(三菱)",
+    "DriveName": "Mitsubishi(三菱) PLC MelsecFx_SerialOverTcp",
+    "DriveType": "Mitsubishi_PLC_MelsecFx_SerialOverTcp",
+    "Remark": "Mitsubishi(三菱) PLC MelsecFx_SerialOverTcp",
+    "Version": "1.0.1",
+    "DrivePath": "Mitsubishi.PLC.MelsecFx_SerialOverTcp",
+    "DriveStartFile": "Drive.Mitsubishi.PLC.MelsecFx_SerialOverTcp.dll",
+    "ConfigClassName": "MelsecFxSerialOverTcpConfig"
+  },
+  {
+    "DriveBrand": "Mitsubishi(三菱)",
+    "DriveName": "Mitsubishi(三菱) PLC MelsecMc Udp",
+    "DriveType": "Mitsubishi_PLC_MelsecMc_Udp",
+    "Remark": "Mitsubishi(三菱) PLC MelsecMc Udp",
+    "Version": "1.0.1",
+    "DrivePath": "Mitsubishi.PLC.MelsecMc_Udp",
+    "DriveStartFile": "Drive.Mitsubishi.PLC.MelsecMc_Udp.dll",
+    "ConfigClassName": "MelsecMcUdpConfig"
+  },
+  {
+    "DriveBrand": "Mitsubishi(三菱)",
+    "DriveName": "Mitsubishi(三菱) PLC MelsecMcAscii Udp",
+    "DriveType": "Mitsubishi_PLC_MelsecMcAscii_Udp",
+    "Remark": "Mitsubishi(三菱) PLC MelsecMcAscii Udp",
+    "Version": "1.0.1",
+    "DrivePath": "Mitsubishi.PLC.MelsecMcAscii_Udp",
+    "DriveStartFile": "Drive.Mitsubishi.PLC.MelsecMcAscii_Udp.dll",
+    "ConfigClassName": "MelsecMcAsciiUdpConfig"
+  },
+  {
+    "DriveBrand": "Mitsubishi(三菱)",
+    "DriveName": "Mitsubishi(三菱) PLC MelsecMcAsciiNet",
+    "DriveType": "Mitsubishi_PLC_MelsecMcAsciiNet",
+    "Remark": "Mitsubishi(三菱) PLC MelsecMcAsciiNet",
+    "Version": "1.0.1",
+    "DrivePath": "Mitsubishi.PLC.MelsecMcAsciiNe",
+    "DriveStartFile": "Drive.Mitsubishi.PLC.MelsecMcAsciiNe.dll",
+    "ConfigClassName": "MelsecMcAsciiNetConfig"
+  },
+  {
+    "DriveBrand": "Mitsubishi(三菱)",
+    "DriveName": "Mitsubishi(三菱) PLC MelsecR Binary",
+    "DriveType": "Mitsubishi_PLC_MelsecR_Binary",
+    "Remark": "Mitsubishi(三菱) PLC MelsecR Binary",
+    "Version": "1.0.1",
+    "DrivePath": "Mitsubishi.PLC.MelsecR_Binary",
+    "DriveStartFile": "Drive.Mitsubishi.PLC.MelsecMcAsciiNe.dll",
+    "ConfigClassName": "MelsecRBinaryConfig"
+  },
+  {
+    "DriveBrand": "Other",
+    "DriveName": "ModbusRTU",
+    "DriveType": "GBxfxy",
+    "Remark": "MODBUS RTU",
+    "Version": "1.0.1",
+    "DrivePath": "ModbusRTU",
+    "DriveStartFile": "Drive.ModbusRTU.dll",
+    "ConfigClassName": "ModBusRTUConfig"
+  }
+]

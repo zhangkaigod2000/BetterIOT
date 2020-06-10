@@ -88,7 +88,7 @@ namespace BetterIOT.Service.Core
                     //启动程序
                     ProcessStartInfo startInfo = new ProcessStartInfo();
                     startInfo.CreateNoWindow = true;
-                    startInfo.WorkingDirectory = AppDomain.CurrentDomain.BaseDirectory + "Drive/" + config.DrivePath;
+                    startInfo.WorkingDirectory = AppDomain.CurrentDomain.BaseDirectory + "/Drive/" + config.DrivePath;
                     startInfo.FileName = "dotnet";
                     startInfo.Arguments = startInfo.WorkingDirectory + "/" + config.DriveStartFile + " " + strDriveConfigPath;
                     startInfo.UseShellExecute = false;

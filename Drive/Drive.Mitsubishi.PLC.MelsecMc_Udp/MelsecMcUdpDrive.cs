@@ -7,9 +7,9 @@ using System.Text;
 
 namespace Drive.Mitsubishi.PLC.MelsecMc_Udp
 {
-    public class MelsecMcUdpDrive : NetworkDeviceBaseTemplate<MelsecFxSerialOverTcpConfig>
+    public class MelsecMcUdpDrive : NetworkDeviceBaseTemplate<MelsecMcUdpConfig>
     {
-        public override void DeviceConn(MelsecFxSerialOverTcpConfig config)
+        public override void DeviceConn(MelsecMcUdpConfig config)
         {
             MelsecMcUdp mcUdp = new MelsecMcUdp();
             mcUdp.IpAddress = config.IP;

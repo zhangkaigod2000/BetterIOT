@@ -8,9 +8,9 @@ using System.Text;
 
 namespace Drive.Mitsubishi.PLC.Melsec3COverTcp
 {
-    public class Melsec3COverTcpDrive : NetworkDeviceBaseTemplate<MelsecA1ENetConfig>
+    public class Melsec3COverTcpDrive : NetworkDeviceBaseTemplate<Melsec3COverTcpConfig>
     {
-        public override void DeviceConn(MelsecA1ENetConfig config)
+        public override void DeviceConn(Melsec3COverTcpConfig config)
         {
             MelsecA3CNet1OverTcp melsecA3C = new MelsecA3CNet1OverTcp();
             melsecA3C.IpAddress = config.IP;
