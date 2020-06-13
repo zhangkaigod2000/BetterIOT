@@ -418,5 +418,15 @@
     "DrivePath": "Siemens.PLC.S7Net",
     "DriveStartFile": "Drive.Siemens.PLC.S7Net.dll",
     "ConfigClassName": "S7NetConfig"
+  },
+  {
+    "DriveBrand": "Siemens(西门子)",
+    "DriveName": "Siemens(西门子)PLC OPCUA",
+    "DriveType": "Siemens_PLC_OPCUA",
+    "Remark": "Siemens(西门子)PLC OPC UA",
+    "Version": "1.0.1",
+    "DrivePath": "Siemens.PLC.OPCUA",
+    "DriveStartFile": "Drive.Siemens.PLC.OPCUA.dll",
+    "ConfigClassName": "OPCUAConfig"
   }
 ]
