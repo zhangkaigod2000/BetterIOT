@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Drive.Panasonic.PLC.MC_3E__Binary
+namespace Drive.Panasonic.PLC.MC_3E_Binary
 {
     public class PanasonicMcNetDrive : NetworkDeviceBaseTemplate<PanasonicMcNetConfig>
     {

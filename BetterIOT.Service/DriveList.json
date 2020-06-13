@@ -282,11 +282,141 @@
   {
     "DriveBrand": "Other",
     "DriveName": "ModbusRTU",
-    "DriveType": "GBxfxy",
+    "DriveType": "ModBusRTU",
     "Remark": "MODBUS RTU",
     "Version": "1.0.1",
     "DrivePath": "ModbusRTU",
     "DriveStartFile": "Drive.ModbusRTU.dll",
     "ConfigClassName": "ModBusRTUConfig"
+  },
+  {
+    "DriveBrand": "Omron(欧姆龙)",
+    "DriveName": "Omron(欧姆龙)PLC CipNet",
+    "DriveType": "Omron_PLC_CipNet",
+    "Remark": "Omron(欧姆龙)PLC CipNet",
+    "Version": "1.0.1",
+    "DrivePath": "Omron.PLC.CipNet",
+    "DriveStartFile": "Drive.Omron.PLC.CipNet.dll",
+    "ConfigClassName": "OmronCipNetConfig"
+  },
+  {
+    "DriveBrand": "Omron(欧姆龙)",
+    "DriveName": "Omron(欧姆龙)PLC FinsHostLink",
+    "DriveType": "Omron_PLC_FinsHostLink",
+    "Remark": "Omron(欧姆龙)PLC FinsHostLink",
+    "Version": "1.0.1",
+    "DrivePath": "Omron.PLC.FinsHostLink",
+    "DriveStartFile": "Drive.Omron.PLC.FinsHostLink.dll",
+    "ConfigClassName": "OmronHostLinkConfig"
+  },
+  {
+    "DriveBrand": "Omron(欧姆龙)",
+    "DriveName": "Omron(欧姆龙)PLC FinsHostLinkOverTCP",
+    "DriveType": "Omron_PLC_FinsHostLinkOverTCP",
+    "Remark": "Omron(欧姆龙)PLC FinsHostLinkOverTCP",
+    "Version": "1.0.1",
+    "DrivePath": "Omron.PLC.FinsHostLinkOverTCP",
+    "DriveStartFile": "Drive.Omron.PLC.FinsHostLinkOverTCP.dll",
+    "ConfigClassName": "OmronHostLinkOverTcpConfig"
+  },
+  {
+    "DriveBrand": "Omron(欧姆龙)",
+    "DriveName": "Omron(欧姆龙)PLC FinsTcp",
+    "DriveType": "Omron_PLC_FinsTcp",
+    "Remark": "Omron(欧姆龙)PLC FinsTcp",
+    "Version": "1.0.1",
+    "DrivePath": "Omron.PLC.FinsTcp",
+    "DriveStartFile": "Drive.Omron.PLC.FinsTcp.dll",
+    "ConfigClassName": "OmronFinsNetConfig"
+  },
+  {
+    "DriveBrand": "Omron(欧姆龙)",
+    "DriveName": "Omron(欧姆龙)PLC FinsUdp",
+    "DriveType": "Omron_PLC_FinsUdp",
+    "Remark": "Omron(欧姆龙)PLC FinsUdp",
+    "Version": "1.0.1",
+    "DrivePath": "Omron.PLC.FinsUdp",
+    "DriveStartFile": "Drive.Omron.PLC.FinsUdp.dll",
+    "ConfigClassName": "OmronFinsUdpConfig"
+  },
+  {
+    "DriveBrand": "Panasonic(松下)",
+    "DriveName": "Panasonic(松下)PLC MC_3E_Binary",
+    "DriveType": "Panasonic_PLC_MC_3E_Binary",
+    "Remark": "Panasonic(松下)PLC MC_3E_Binary",
+    "Version": "1.0.1",
+    "DrivePath": "Panasonic.PLC.MC_3E_Binary",
+    "DriveStartFile": "Drive.Panasonic.PLC.MC_3E_Binary.dll",
+    "ConfigClassName": "PanasonicMcNetConfig"
+  },
+  {
+    "DriveBrand": "Panasonic(松下)",
+    "DriveName": "Panasonic(松下)PLC Mewtocol",
+    "DriveType": "Panasonic_PLC_Mewtocol",
+    "Remark": "Panasonic(松下)PLC Mewtocol",
+    "Version": "1.0.1",
+    "DrivePath": "Panasonic.PLC.Mewtocol",
+    "DriveStartFile": "Drive.Panasonic.PLC.Mewtocol.dll",
+    "ConfigClassName": "PanasonicMewtocolConfig"
+  },
+  {
+    "DriveBrand": "Panasonic(松下)",
+    "DriveName": "Panasonic(松下)PLC MewtocolOverTcp",
+    "DriveType": "Panasonic_PLC_MewtocolOverTcp",
+    "Remark": "Panasonic(松下)PLC MewtocolOverTcp",
+    "Version": "1.0.1",
+    "DrivePath": "Panasonic.PLC.MewtocolOverTcp",
+    "DriveStartFile": "Drive.Panasonic.PLC.MewtocolOverTcp.dll",
+    "ConfigClassName": "PanasonicMewtocolOverTcpConfig"
+  },
+  {
+    "DriveBrand": "Siemens(西门子)",
+    "DriveName": "Siemens PLC FetchWrite",
+    "DriveType": "Siemens_PLC_FetchWrite",
+    "Remark": "Siemens(西门子)PLC FetchWrite",
+    "Version": "1.0.1",
+    "DrivePath": "Siemens.PLC.FetchWrite",
+    "DriveStartFile": "Drive.Siemens.PLC.FetchWrite.dll",
+    "ConfigClassName": "SiemensFetchWriteConfig"
+  },
+  {
+    "DriveBrand": "Siemens(西门子)",
+    "DriveName": "Siemens(西门子)PLC MPI",
+    "DriveType": "Siemens_PLC_MPI",
+    "Remark": "Siemens(西门子)PLC MPI",
+    "Version": "1.0.1",
+    "DrivePath": "Siemens.PLC.MPI",
+    "DriveStartFile": "Drive.Siemens.PLC.MPI.dll",
+    "ConfigClassName": "SiemensMPIConfig"
+  },
+  {
+    "DriveBrand": "Siemens(西门子)",
+    "DriveName": "Siemens(西门子)PLC PPI",
+    "DriveType": "Siemens_PLC_PPI",
+    "Remark": "Siemens(西门子)PLC PPI",
+    "Version": "1.0.1",
+    "DrivePath": "Siemens.PLC.PPI",
+    "DriveStartFile": "Drive.Siemens.PLC.PPI.dll",
+    "ConfigClassName": "SiemensPPIConfig"
+  },
+  {
+    "DriveBrand": "Siemens(西门子)",
+    "DriveName": "Siemens(西门子)PLC PPIOverTcp",
+    "DriveType": "Siemens_PLC_PPIOverTcp",
+    "Remark": "Siemens(西门子)PLC PPIOverTcp",
+    "Version": "1.0.1",
+    "DrivePath": "Siemens.PLC.PPIOverTcp",
+    "DriveStartFile": "Drive.Siemens.PLC.PPIOverTcp.dll",
+    "ConfigClassName": "SiemensPPIOverTcpConfig"
+  },
+  {
+    "DriveBrand": "Siemens(西门子)",
+    "DriveName": "Siemens(西门子)PLC S7Net",
+    "DriveType": "Siemens_PLC_S7Net",
+    "Remark": "Siemens(西门子)PLC(S1200/S1500/S200/S200Smart/S300/S400)",
+    "Version": "1.0.1",
+    "DrivePath": "Siemens.PLC.S7Net",
+    "DriveStartFile": "Drive.Siemens.PLC.S7Net.dll",
+    "ConfigClassName": "S7NetConfig"
   }
 ]

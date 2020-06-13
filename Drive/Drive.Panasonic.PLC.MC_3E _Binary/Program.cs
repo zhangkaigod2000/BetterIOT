@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Drive.Panasonic.PLC.MC_3E__Binary
+namespace Drive.Panasonic.PLC.MC_3E_Binary
 {
     class Program
     {
