@@ -303,8 +303,8 @@ namespace Drive.Haas.CNC.Serial
                     Unit = "-",
                     DataName = "转速"
                 });
-                return Ds;
             }
+            return Ds;
         }
 
         private string GetVariable(int variable)
