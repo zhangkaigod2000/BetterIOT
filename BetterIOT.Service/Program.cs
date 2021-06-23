@@ -19,6 +19,8 @@ namespace BetterIOT.Service
 
         public static ConfigInfo configInfo = ConfigInfo.ReadConfig();
 
+        public static object lockdb = new object();
+
         static async Task Main(string[] args)
         {
             var builder = new HostBuilder()

@@ -4,6 +4,7 @@ using BetterIOT.Service.LocalDB;
 using LiteDB;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
@@ -14,16 +15,15 @@ namespace BetterIOT.Service.Core
     {
         private readonly BusClient bus;
         private readonly ILogger<IOTDataService> logger;
-        
+
         const string DBFile = "iot.db";
-        LitedbWapper litedb;
+        //LitedbWapper litedb;
         private readonly Timer timer;
 
 
         public IOTDataService(ILogger<IOTDataService> logger)
         {
             this.logger = logger;
-            litedb = new LitedbWapper(DBFile);
             bus = new BusClient();
             this.bus.Subscribe(BusOption.DATA_OUTPUT);
             this.bus.OnReceived += Bus_OnReceived;
@@ -33,13 +33,25 @@ namespace BetterIOT.Service.Core
 
         private void ClearData()
         {
-            using (var db = new LiteDatabase(DBFile))
+            lock (Program.lockdb)
             {
-                var col = db.GetCollection<IOTData>();
-                if (col.Count() > 0)
+                try
                 {
-                    col.EnsureIndex(x => x.Sended);
-                    col.DeleteMany(a => a.Sended == true);
+
+                    using (var db = new LiteDatabase(DBFile))
+                    {
+                        var col = db.GetCollection<IOTData>();
+                        if (col.Count() > 0)
+                        {
+                            col.EnsureIndex(x => x.Sended);
+                            col.DeleteMany(a => a.Sended == true);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.ToString());
+                    logger.LogError(ex.ToString());
                 }
             }
         }
@@ -47,7 +59,13 @@ namespace BetterIOT.Service.Core
         private void Bus_OnReceived(object sender, BusEventArgs e)
         {
             var data = System.Text.Json.JsonSerializer.Deserialize<IEnumerable<IOTData>>(e.Message);
-            litedb.Insert<IOTData>(data);
+            lock (Program.lockdb)
+            {
+                using (var litedb = new LitedbWapper(DBFile))
+                {
+                    litedb.Insert<IOTData>(data);
+                }
+            }
         }
 
         protected override Task ExecuteAsync(CancellationToken stoppingToken)

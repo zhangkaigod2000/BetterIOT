@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace BetterIOT.Service.LocalDB
 {
-    public class LitedbWapper
+    public class LitedbWapper:IDisposable
     {
         string DbPath = "";
         public LitedbWapper(string DBPath)
@@ -83,6 +83,11 @@ namespace BetterIOT.Service.LocalDB
 
                 }
             }
+        }
+
+        public void Dispose()
+        {
+            
         }
     }
 }

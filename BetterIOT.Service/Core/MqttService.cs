@@ -36,7 +36,7 @@ namespace BetterIOT.Service.Core
         }
         private void Bus_OnReceived(object sender, BusEventArgs e)
         {
-            
+
         }
         private static void MQTTTran_OnGetData(object sender, string ClientId, string topic, string e)
         {
@@ -49,28 +49,31 @@ namespace BetterIOT.Service.Core
             {
                 try
                 {
-                    using (var db = new LiteDatabase(DBFile))
+                    lock (Program.lockdb)
                     {
-                        var col = db.GetCollection<IOTData>(typeof(IOTData).ToString());
-                        IEnumerable<IOTData> iOTs = col.Find(x => x.Sended == false);
-                        bool sendok = mQTTTran.SendMessageTB(System.Text.Json.JsonSerializer.Serialize(iOTs), Program.configInfo.Topic_IOTDATA);
-                        if (sendok == true)
+                        using (var db = new LiteDatabase(DBFile))
                         {
-                            //发送成功,改变数据状态
-                            foreach (IOTData iot in iOTs)
+                            var col = db.GetCollection<IOTData>(typeof(IOTData).ToString());
+                            IEnumerable<IOTData> iOTs = col.Find(x => x.Sended == false);
+                            bool sendok = mQTTTran.SendMessageTB(System.Text.Json.JsonSerializer.Serialize(iOTs), Program.configInfo.Topic_IOTDATA);
+                            if (sendok == true)
                             {
-                                iot.Sended = true;
-                                col.Update(iot);
+                                //发送成功,改变数据状态
+                                foreach (IOTData iot in iOTs)
+                                {
+                                    iot.Sended = true;
+                                    col.Update(iot);
+                                }
                             }
-                        }
-                        else
-                        {
-                            //发送失败
-                            mQTTTran.Connect();
+                            else
+                            {
+                                //发送失败
+                                mQTTTran.Connect();
+                            }
                         }
                     }
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     logger.LogError(ex.ToString());
                 }
