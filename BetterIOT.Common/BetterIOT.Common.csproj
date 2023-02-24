@@ -6,7 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="Jint" Version="2.11.58" />
-    <PackageReference Include="LiteDB" Version="5.0.8" />
+    <PackageReference Include="LiteDB" Version="5.0.13" />
     <PackageReference Include="NetMQ" Version="4.0.0.207" />
     <PackageReference Include="System.Text.Json" Version="4.7.2" />
   </ItemGroup>
